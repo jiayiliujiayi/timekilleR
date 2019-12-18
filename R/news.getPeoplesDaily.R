@@ -1,12 +1,14 @@
-#' Title
+#' get the news from the People's Daily
 #'
-#' @param category
+#' @param category which category of the news would you like to check?
+#' Defaluts to "headline"
+#' @keywords news
 #'
 #' @return PeoplesDailyNews
 #' @export
 #'
-#' @examples
-#' @importFrom rvest read_html
+#' @examples getPeoplesDaily()
+#' @importFrom xml2 read_html
 getPeoplesDaily <-
   function(category = "headline"){
     url = 'http://en.people.cn/'

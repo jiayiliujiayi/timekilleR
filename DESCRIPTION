@@ -1,13 +1,18 @@
 Package: timekiller
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Kills time.  
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jiayi Liu
+Maintainer: Jiayi Liu <jiayiliujiayiliu@gmail.com>
+Description: Want to check some news?  
+    Or decide what to have for the dinner tonight?  
+    Or check weather?  
+    Every function in this package is just for killing time.  
+    Have Fun:)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: 
-  rvest
+Depends:
+  rvest, 
+  xml2
+RoxygenNote: 7.0.2
