@@ -23,7 +23,7 @@ cd .. && R CMD INSTALL timekiller
 ```
 ### to be developed  
 #### some unimportant and superstitious functions
-getNature: scrape latest research/news/opinions from nature.com  
+~~getNature: scrape latest research/news/opinions from nature.com~~  
 getScience/Cell? wrap these three or more into getResearch?  
 whoAmItoday: randomly generate a noun  
 getWeather: arguments including "today"(default), "yesterday", "tomorrow" and "wees" (which represents this week)  
