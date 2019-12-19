@@ -46,3 +46,64 @@ fread.delim <-
           sep = delim, header = header) %>%
       as.data.frame
   }
+
+#' Title
+#'fast read a dataset into a matrix
+#'
+#' @param path_to_file: the path to the dataset
+#' @param delim: delimiter, default (tab-delimited)
+#' @param header: default TRUE
+#' @param cores: number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.
+#'
+#' @return
+#' @export
+#'
+#' @examples fread.matrix('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_matrix.txt')
+fread.matrix <-
+  function(path_to_file, delim = "auto", header = "auto", cores = 29){
+    # set path to the file as 'input' variable
+    input = path_to_file
+
+    # define n cores to use when reading the dataset
+    if(class(detectCores()) == "integer"){
+      if(detectCores() <= cores){
+        print(paste0('You have ',
+                     detectCores(),
+                     ' cores available to use. Setting the number of cores as ',
+                     detectCores()/2))
+        setDTthreads(detectCores()/2)
+      } else{
+        print(paste0('Great! You have ',
+                     detectCores(),
+                     ' cores available to use. Setting the number of cores as ',
+                     cores,
+                     ' per your request:)'))
+        setDTthreads(cores)
+      }} else {
+        print("Sorry, I could not check the numbers of cores your computer has, set the cores to 1")
+        setDTthreads(1)
+      }
+
+    # import the data frame
+    df.temp <-
+      fread(input,
+            stringsAsFactors = F, check.names = F,
+            sep = delim, header = header) %>%
+      as.data.frame
+    ## extract the rownames using the first column the ouput matrix
+    df.temp.colname1 <- colnames(df.temp)[1]
+    df.temp.rownames <- df.temp[, c(df.temp.colname1)]
+
+
+    # transform into matrix
+    df.temp <- df.temp %>%
+      ### remove the 1st column
+      .[, !colnames(.) %in% df.temp.colname1] %>%
+      ### assign rownames
+      `rownames<-`(c(df.temp.rownames)) %>%
+      ### convert into matrix
+      as.matrix
+
+    df.temp
+  }
+
