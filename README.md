@@ -6,7 +6,7 @@
 ---
 The timekiller is an [R](https://www.r-project.org) package with unimportant, superstitious and personal R functions that kill time. 
 
-Also, writing this package itself is a way of killing time for me.  
+Also, writing this package itself is a way to kill time.  
 
 ---
 
