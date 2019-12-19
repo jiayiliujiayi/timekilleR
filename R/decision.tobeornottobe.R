@@ -10,7 +10,7 @@
 #'
 #' @keywords news
 #'
-#' @param input ask a yes or no question or say some random words to timekiller,
+#' @param input ask a yes or no question or say some random words to the timekiller,
 #' e.g.: simply "Should I have lunch today?" or just "asdklfja2".
 #'
 #' @return
