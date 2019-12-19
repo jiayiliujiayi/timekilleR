@@ -4,15 +4,19 @@
 [Jiayi Liu](https://jiayiliu.me)
   
 ---
-The timekiller is an [R](https://www.r-project.org) package with unimportant, superstitious and personal R functions that kill time.  
-
+The timekiller is an [R](https://www.r-project.org) package with unimportant, superstitious and personal R functions that kill time. 
 Also, writing this package itself is a way of killing time for me.  
 ---
 
 ## Install:
 Install with devtools
 ```
+install.packages('devtools')
 devtools::install_github('jiayiliujiayi/timekiller')
+```  
+Install with the source code  
+```
+git clone https://github.com/jiayiliujiayi/timekiller.git  
 
 ```
 ### to be developed  
