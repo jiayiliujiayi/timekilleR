@@ -10,17 +10,23 @@ Also, writing this package itself is a way to kill time.
 
 ---
 
-## Install:
-Install with devtools from within R:  
-```
+## Installation and loading:
+------------------------
+-     Install with devtools from within R:  
+```r
 install.packages('devtools')
 devtools::install_github('jiayiliujiayi/timekiller')
 ```  
-Install with the source code: in your terminal, execute the following lines:    
+-     or install with the source code: in your terminal, execute the following lines:    
 ```
 git clone https://github.com/jiayiliujiayi/timekiller.git 
 cd .. && R CMD INSTALL timekiller
 ```
+-     Loading the package:  
+```r
+library(timekiller)
+```
+
 ### to be developed  
 #### some unimportant and superstitious functions
 ~~getNature: scrape latest research/news/opinions from nature.com~~  
