@@ -8,7 +8,7 @@ getPeoplesDaily(category = "headline")
 }
 \arguments{
 \item{category}{which category of the news would you like to check?
-Defaluts to "headline"}
+Defaluts to "headline", could be "headline", "tophit" or "latest"}
 }
 \value{
 PeoplesDailyNews
