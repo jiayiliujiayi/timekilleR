@@ -9,7 +9,7 @@ Description: Want to check some news?
     Or check weather?  
     Every function in this package is just for killing time.  
     Have Fun:)
-License: MIT + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Depends:

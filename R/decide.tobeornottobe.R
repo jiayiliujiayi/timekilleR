@@ -15,7 +15,7 @@
 #' @return
 #' @export
 #'
-#' @examples timekiller("Should I have lunch today?")
+#' @examples tobeornottobe("Should I have lunch today?")
 tobeornottobe <-
   function(input = NULL){
     if(class(input) == "character"){

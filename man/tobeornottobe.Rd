@@ -23,5 +23,5 @@ And by opposing end them?" \cr
 --Hamlet 3.1
 }
 \examples{
-timekiller("Should I have lunch today?")
+tobeornottobe("Should I have lunch today?")
 }
