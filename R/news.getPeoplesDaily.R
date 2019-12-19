@@ -1,7 +1,7 @@
 #' get the news from the People's Daily
 #'
 #' @param category which category of the news would you like to check?
-#' Defaluts to "headline"
+#' Defaluts to "headline", could be "headline", "tophit" or "latest"
 #' @keywords news
 #'
 #' @return PeoplesDailyNews
@@ -11,7 +11,9 @@
 #' @importFrom xml2 read_html
 getPeoplesDaily <-
   function(category = "headline"){
+    # define the url variable as the main website of the People's Daily
     url = 'http://en.people.cn/'
+    # read the main website
     web = read_html(url)
     if(category == "headline"){
       print(html_nodes(web,".p1_1 b") %>% html_text %>% gsub('\n', '', .))
