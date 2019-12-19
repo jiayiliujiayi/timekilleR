@@ -23,3 +23,6 @@ fread.matrix(path_to_file, delim = "auto", header = "auto", cores = 29)
 Title
 fast read a dataset into a matrix
 }
+\examples{
+fread.matrix('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_matrix.txt')
+}

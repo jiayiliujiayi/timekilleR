@@ -26,6 +26,5 @@ Fast read data frame
 The functions are developed to fit personal preference. Feel free to modify it.
 }
 \examples{
-fread.delim(path_to_file = data.frame(Gene.Symbol = c("a", "b", "c"),
-Cell1 = c(1, 1, 2), Cell2 = c(2, 2, 4), stringsAsFactors  = F, check.names = F))
+fread.delim('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 }
