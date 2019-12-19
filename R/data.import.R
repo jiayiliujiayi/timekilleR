@@ -10,7 +10,8 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples fread.delim(path_to_file = data.frame(Gene.Symbol = c("a", "b", "c"),
+#' Cell1 = c(1, 1, 2), Cell2 = c(2, 2, 4), stringsAsFactors  = F, check.names = F))
 #' @importFrom data.table fread
 #' @importFrom parallel detectCores
 
@@ -54,7 +55,7 @@ fread.delim <-
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples fread.matrix(path_to_file = matrix())
 fread.matrix <-
   function(path_to_file, delim = "auto", header = "auto", cores = 29){
     # set path to the file as 'input' variable
