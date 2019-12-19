@@ -21,7 +21,7 @@ fread.delim <-
     input = path_to_file
 
     # define n cores to use when reading the dataset
-    if(detectCores() <= cores){
+    if(0){if(detectCores() <= cores){
       print(paste0('You have ',
                    detectCores(),
                    ' cores available to use. Setting the number of cores as ',
@@ -34,7 +34,7 @@ fread.delim <-
                    cores,
                    ' per your request:)'))
       setDTthreads(cores)
-    }
+    }}
 
     # import the data frame
     fread(input,
