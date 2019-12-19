@@ -11,15 +11,15 @@ Also, writing this package itself is a way of killing time for me.
 ---
 
 ## Install:
-Install with devtools
+Install with devtools from within R:  
 ```
 install.packages('devtools')
 devtools::install_github('jiayiliujiayi/timekiller')
 ```  
-Install with the source code  
+Install with the source code: in your terminal, execute the following lines:    
 ```
-git clone https://github.com/jiayiliujiayi/timekiller.git  
-
+git clone https://github.com/jiayiliujiayi/timekiller.git 
+cd .. && R CMD INSTALL timekiller
 ```
 ### to be developed  
 #### some unimportant and superstitious functions
@@ -31,5 +31,6 @@ play24points: generate four integers within the range of [1,10].
 myLuckyNumber: generate today's lucky number, seed(Sys.Date)
 #### data manipulation functions in the preprocessing of the genomic data  
 readCountsMatrix: fast read counts matrix (avoid using read.table)  
+aggregateGeneSymbols: sum counts with the same gene.symbols for each cell (call data.table .SD)  
 CountsToMatrix: call magrittr pipe; amend colnames(.)[1] before tranformation  
 MatrixToCounts: call pipe
