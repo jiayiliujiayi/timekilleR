@@ -1,7 +1,9 @@
-#' get the news from the People's Daily
+#' getPeoplesDaily
+#'
+#' Get the news from the People's Daily
 #'
 #' @param category which category of the news would you like to check?
-#' Defaluts to "headline", could be "headline", "tophit" or "latest"
+#' Options: "headline", "tophit" or "latest" (default: "headline")
 #' @keywords news
 #'
 #' @return PeoplesDailyNews

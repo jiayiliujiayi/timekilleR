@@ -2,19 +2,19 @@
 % Please edit documentation in R/news.getPeoplesDaily.R
 \name{getPeoplesDaily}
 \alias{getPeoplesDaily}
-\title{get the news from the People's Daily}
+\title{getPeoplesDaily}
 \usage{
 getPeoplesDaily(category = "headline")
 }
 \arguments{
 \item{category}{which category of the news would you like to check?
-Defaluts to "headline", could be "headline", "tophit" or "latest"}
+Options: "headline", "tophit" or "latest" (default: "headline")}
 }
 \value{
 PeoplesDailyNews
 }
 \description{
-get the news from the People's Daily
+Get the news from the People's Daily
 }
 \examples{
 getPeoplesDaily()
