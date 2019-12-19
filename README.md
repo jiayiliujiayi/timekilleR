@@ -33,7 +33,7 @@ Time to kill time!
 `getPeoplesDaily()`:  scrape the latest news from the People’s Daily, China’s largest comprehensive media.  
 `getNature()`: wanna keep updated in the scientific world? Try this funcion to acquire the latest news from the Nature, a leading international weekly journal of science!  
 #### Cannot make a decision? Ask the timekiller:  
-`tobeornottobe()`:  ask anything to timekiller, then you'll promptly get a Yes/No answer.  Notice: The pious way of doing this is ask one question once.  
+`tobeornottobe()`:  ask anything to timekiller, then you'll promptly get a Yes/No answer.  Notice: The pious way of doing this is to ask one question once.  
 #### The serious moment when calling timekiller: __data manipulation__  
 ##### importing data in a faster way  
 `fread.delim()`: takes a data frame as input and import it as a data frame into the .GLobalEnv.  Yes, it is a wrapper of data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
