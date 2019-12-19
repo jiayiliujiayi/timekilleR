@@ -19,7 +19,7 @@ fread.delim <-
   function(path_to_file, delim = "\t", header = T, cores = 29){
     # set path to the file as 'input' variable
     input = path_to_file
-
+    setDTthreads(cores)
     # define n cores to use when reading the dataset
     # if(detectCores() <= cores){
     #   print(paste0('You have ',
