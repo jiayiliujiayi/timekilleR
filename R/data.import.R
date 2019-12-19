@@ -10,7 +10,7 @@
 #' @return
 #' @export
 #'
-#' @examples fread.delim(path_to_file = '~/xx/xxx/xxxx.txt')
+#' @examples
 #' @importFrom data.table fread
 #' @importFrom parallel detectCores
 
@@ -54,7 +54,7 @@ fread.delim <-
 #' @return
 #' @export
 #'
-#' @examples fread.matrix(path_to_file = '~/xx/xxx/xxxx.txt')
+#' @examples
 fread.matrix <-
   function(path_to_file, delim = "auto", header = "auto", cores = 29){
     # set path to the file as 'input' variable

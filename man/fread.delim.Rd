@@ -25,6 +25,3 @@ Fast read data
 Fast read data frame
 The functions are developed to fit personal preference. Feel free to modify it.
 }
-\examples{
-fread.delim(path_to_file = '~/xx/xxx/xxxx.txt')
-}

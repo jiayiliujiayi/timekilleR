@@ -23,6 +23,3 @@ fread.matrix(path_to_file, delim = "auto", header = "auto", cores = 29)
 Title
 fast read a dataset into a matrix
 }
-\examples{
-fread.matrix(path_to_file = '~/xx/xxx/xxxx.txt')
-}
