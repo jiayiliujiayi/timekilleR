@@ -24,5 +24,5 @@ Title
 fast read a dataset into a matrix
 }
 \examples{
-fread.matrix()
+fread.matrix(path_to_file = '~/xx/xxx/xxxx.txt')
 }
