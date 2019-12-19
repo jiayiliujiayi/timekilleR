@@ -19,22 +19,26 @@ fread.delim <-
   function(path_to_file, delim = "\t", header = T, cores = 29){
     # set path to the file as 'input' variable
     input = path_to_file
-    setDTthreads(cores)
+
     # define n cores to use when reading the dataset
-    # if(detectCores() <= cores){
-    #   print(paste0('You have ',
-    #                detectCores(),
-    #                ' cores available to use. Setting the number of cores as ',
-    #                detectCores()/2))
-    #   setDTthreads(detectCores()/2)
-    # } else{
-    #   print(paste0('Great! You have ',
-    #                detectCores(),
-    #                ' cores available to use. Setting the number of cores as ',
-    #                cores,
-    #                ' per your request:)'))
-    #   setDTthreads(cores)
-    # }
+    if(class(detectCores()) == "integer"){
+    if(detectCores() <= cores){
+      print(paste0('You have ',
+                   detectCores(),
+                   ' cores available to use. Setting the number of cores as ',
+                   detectCores()/2))
+      setDTthreads(detectCores()/2)
+    } else{
+      print(paste0('Great! You have ',
+                   detectCores(),
+                   ' cores available to use. Setting the number of cores as ',
+                   cores,
+                   ' per your request:)'))
+      setDTthreads(cores)
+    }} else {
+      print("Sorry, I could not check the numbers of cores your computer has, set the cores to 1")
+      setDTthreads(1)
+    }
 
     # import the data frame
     fread(input,
