@@ -14,5 +14,7 @@ Encoding: UTF-8
 LazyData: true
 Depends:
   rvest, 
-  xml2
+  xml2, 
+  data.table, 
+  parallel
 RoxygenNote: 7.0.2
