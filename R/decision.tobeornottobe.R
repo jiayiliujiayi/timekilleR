@@ -8,6 +8,7 @@
 #' \cr
 #' --Hamlet 3.1
 #'
+#' @keywords news
 #'
 #' @param input ask a yes or no question or say some random words to timekiller,
 #' e.g.: simply "Should I have lunch today?" or just "asdklfja2".
