@@ -4,7 +4,7 @@
 [Jiayi Liu](https://jiayiliu.me)
   
 ---
-The timekiller is an [R](https://www.r-project.org) package with unimportant, superstitious and personal R functions that kill time. 
+The timekiller is an [R](https://www.r-project.org) package with several unimportant, superstitious and personal R functions that kill time. 
 
 Also, writing this package itself is a way to kill time.  
 
@@ -26,9 +26,11 @@ cd .. && R CMD INSTALL timekiller
 ~~getNature: scrape latest research/news/opinions from nature.com~~  
 getScience/Cell? wrap these three or more into getResearch?  
 whoAmItoday: randomly generate a noun  
-getWeather: arguments including "today"(default), "yesterday", "tomorrow" and "wees" (which represents this week)  
+getWeather: arguments including "today"(default), "yesterday", "tomorrow" and "week" (which represents this week)  
+getAirQualityIndex/getAQI  
 play24points: generate four integers within the range of [1,10].  
-myLuckyNumber: generate today's lucky number, seed(Sys.Date)
+myLuckyNumber: generate today's lucky number, seed(Sys.Date %% 1e10)  
+getPoem(): eng and chn
 #### data manipulation functions in the preprocessing of the genomic data  
 readCountsMatrix: fast read counts matrix (avoid using read.table)  
 aggregateGeneSymbols: sum counts with the same gene.symbols for each cell (call data.table .SD)  

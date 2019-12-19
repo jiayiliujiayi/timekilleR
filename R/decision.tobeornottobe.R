@@ -23,7 +23,8 @@ tobeornottobe <-
       # convert the input character into a numeric (nchar here)
       input.nchar <- nchar(input)
       # set seed, plus a time variable
-      set.seed(input.nchar + Sys.time() %>% as.POSIXct(units="secs") %>% as.numeric())
+      ## modulo 1e9 incase the second variable exceeds the max integer of R, which is 2147483647 (.Machine$integer.max)
+      set.seed(input.nchar + Sys.time() %>% as.POSIXct(units="secs") %>% as.numeric() %% 1e9)
       # fake numeric vector simulator, then modulo the sum of which
       input.to.number <-
         round(runif(min = 1, max = 99999, n = input.nchar)) %>% sum
@@ -36,3 +37,4 @@ tobeornottobe <-
       cat("Please ask me a question or tell me some random things\ne.g., \"Should I have dinner today?\" or just \"asdafj\"")
     }
   }
+
