@@ -9,7 +9,7 @@
 #' @return PeoplesDailyNews
 #' @export
 #'
-#' @examples getPeoplesDaily()
+#' @examples getNature()
 #' @importFrom xml2 read_html
 getNature <-
   function(category = "news"){

@@ -17,5 +17,5 @@ play24points: generate four integers within the range of [1,10].
 myLuckyNumber: generate today's lucky number, seed(Sys.Date)
 #### data manipulation functions in the preprocessing of the genomic data  
 readCountsMatrix: fast read counts matrix (avoid using read.table)  
-CountsToMatrix: call magrittr pipe
+CountsToMatrix: call magrittr pipe; amend colnames(.)[1] before tranformation  
 MatrixToCounts: call pipe
