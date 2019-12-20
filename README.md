@@ -36,7 +36,7 @@ Time to kill time!
 `tobeornottobe()`:  ask anything to timekiller, then you'll promptly get a Yes/No answer.  Notice: The pious way of doing this is to ask one question once.  
 #### The serious moment when calling timekiller: __data manipulation__  
 ##### importing data in a faster way  
-`fread.delim()`: takes a data frame format text file as input and import it as a data frame into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
+`fread.delim()`: fastly imports a data frame format text file as a 'data frame' element into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
 The format of the input file look like so:  
 
 | Gene.Symbol | Cell1 | Cell2 |
@@ -45,7 +45,7 @@ The format of the input file look like so:
 |b|1|2|
 |c|2|4|
 
-`fread.matrix()`: takes a matrix format text file as input and import it as a matrix into the .GlobalEnv.  And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
+`fread.matrix()`: fastly imports a matrix format text file as a matrix into the .GlobalEnv.  And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
 The format of the input file look like so:  
 
 |             | Cell1 | Cell2 |
