@@ -28,3 +28,4 @@ The functions are developed to fit personal preference. Feel free to modify it.
 \examples{
 fread.delim('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 }
+\keyword{data}

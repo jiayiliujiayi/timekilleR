@@ -16,5 +16,6 @@ Depends:
   rvest, 
   xml2, 
   data.table, 
-  parallel
+  parallel, 
+  magrittr
 RoxygenNote: 7.0.2

@@ -6,6 +6,7 @@
 #'
 #' @return
 #' @export
+#' @keywords data
 #'
 #' @examples ifCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 #' @importFrom data.table fread

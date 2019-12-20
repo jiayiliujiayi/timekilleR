@@ -8,13 +8,14 @@
 #' \cr
 #' --Hamlet 3.1
 #'
-#' @keywords news
+#' @keywords fun
 #'
 #' @param input ask a yes or no question or say some random words to the timekiller,
 #' e.g.: simply "Should I have lunch today?" or just "asdklfja2".
 #'
 #' @return
 #' @export
+#' @importFrom stats runif
 #'
 #' @examples tobeornottobe("Should I have lunch today?")
 tobeornottobe <-

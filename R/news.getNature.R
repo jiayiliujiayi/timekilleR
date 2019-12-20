@@ -15,6 +15,7 @@
 #'
 #' @examples getNature()
 #' @importFrom xml2 read_html
+#' @importFrom rvest html_nodes html_text
 getNature <-
   function(category = "news"){
     if(category == "news"){

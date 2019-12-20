@@ -25,4 +25,4 @@ And by opposing end them?" \cr
 \examples{
 tobeornottobe("Should I have lunch today?")
 }
-\keyword{news}
+\keyword{fun}

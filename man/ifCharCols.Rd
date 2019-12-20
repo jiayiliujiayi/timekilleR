@@ -18,3 +18,4 @@ Check if there are character columns in your dataset.
 \examples{
 ifCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 }
+\keyword{data}

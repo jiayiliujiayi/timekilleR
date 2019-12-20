@@ -10,8 +10,11 @@
 #' @return
 #' @export
 #'
+#' @keywords data
+#'
 #' @examples fread.delim('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
-#' @importFrom data.table fread
+#' @importFrom  data.table fread setDTthreads
+#' @import magrittr
 #' @importFrom parallel detectCores
 
 # fast read a dataset into a data frame
