@@ -2,8 +2,7 @@
 % Please edit documentation in R/data.inspection.R
 \name{ifCharCols}
 \alias{ifCharCols}
-\title{ifCharCols
-Check if there are character columns in your dataset.}
+\title{ifCharCols}
 \usage{
 ifCharCols(path_to_file)
 }
@@ -14,7 +13,6 @@ ifCharCols(path_to_file)
 
 }
 \description{
-ifCharCols
 Check if there are character columns in your dataset.
 }
 \examples{

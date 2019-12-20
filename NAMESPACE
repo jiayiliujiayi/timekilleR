@@ -2,6 +2,7 @@
 
 export(fread.delim)
 export(fread.matrix)
+export(getCharCols)
 export(getNature)
 export(getPeoplesDaily)
 export(ifCharCols)

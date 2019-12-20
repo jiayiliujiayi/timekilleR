@@ -4,7 +4,7 @@
 \alias{tobeornottobe}
 \title{tobeornottobe}
 \usage{
-tobeornottobe(input = NULL)
+tobeornottobe(input = "Should I study today?")
 }
 \arguments{
 \item{input}{ask a yes or no question or say some random words to the timekiller,

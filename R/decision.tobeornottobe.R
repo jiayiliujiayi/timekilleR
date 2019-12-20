@@ -18,7 +18,7 @@
 #'
 #' @examples tobeornottobe("Should I have lunch today?")
 tobeornottobe <-
-  function(input = NULL){
+  function(input = "Should I study today?"){
     if(class(input) == "character"){
       # convert the input character into a numeric (nchar here)
       input.nchar <- nchar(input)
