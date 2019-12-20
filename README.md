@@ -37,14 +37,22 @@ Time to kill time!
 #### The serious moment when calling timekiller: __data manipulation__  
 ##### importing data in a faster way  
 `fread.delim()`: takes a data frame format text file as input and import it as a data frame into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
-the format of the input file:  
-| Gene.Symbol | Cell1 | Cell2 |   |   |
-|-------------|-------|-------|---|---|
-| a           | 1     | 2     |   |   |
-| b           | 1     | 2     |   |   |
-| c           | 2     | 4     |   |   |
+The format of the input file look like so:  
+
+| Gene.Symbol | Cell1 | Cell2 |
+|-------------|-------|-------|
+|a|1|2|
+|b|1|2|
+|c|2|4|
 
 `fread.matrix()`: takes a matrix format text file as input and import it as a matrix into the .GlobalEnv.  And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
+The format of the input file look like so:  
+
+|             | Cell1 | Cell2 |
+|-------------|-------|-------|
+|**a**|1|2|
+|**b**|1|2|
+|**c**|2|4|
   
   
   
