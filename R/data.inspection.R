@@ -38,7 +38,7 @@ ifCharCols <-
 #' @return
 #' @export
 #'
-#' @examples getCharColsifCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
+#' @examples getCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 getCharCols <-
   function(path_to_file){
     input = path_to_file

@@ -16,5 +16,5 @@ getCharCols(path_to_file)
 Extract the colnames of the "character" columns
 }
 \examples{
-getCharColsifCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
+getCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 }
