@@ -1,10 +1,10 @@
 #' Title
 #'
-#' @param path_to_file: the path to the dataset
-#' @param id: the grouping id in the dataset, default = "Gene Symbol".
-#' @param cores: number of cores when reading the dataset. default: 19.
-#' @param delim: delimiter, default (tab-delimited)
-#' @param header: default = T
+#' @param path_to_file the path to the dataset
+#' @param id the grouping id in the dataset, default = "Gene Symbol".
+#' @param cores number of cores when reading the dataset. default: 19.
+#' @param delim delimiter, default (tab-delimited)
+#' @param header default = T
 #'
 #' @keywords data
 #'

@@ -2,7 +2,7 @@
 #'
 #' Check if there are character columns in your dataset.
 #'
-#' @param path_to_file
+#' @param path_to_file the path to the dataset
 #'
 #' @return
 #' @export
@@ -33,7 +33,7 @@ ifCharCols <-
 #'
 #' Extract the colnames of the "character" columns
 #'
-#' @param path_to_file
+#' @param path_to_file the path to the dataset
 #'
 #' @return
 #' @export

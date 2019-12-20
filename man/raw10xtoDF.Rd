@@ -13,15 +13,15 @@ raw10xtoDF(
 )
 }
 \arguments{
-\item{path_to_file:}{the path to the dataset}
+\item{path_to_file}{the path to the dataset}
 
-\item{id:}{the grouping id in the dataset, default = "Gene Symbol".}
+\item{id}{the grouping id in the dataset, default = "Gene Symbol".}
 
-\item{cores:}{number of cores when reading the dataset. default: 19.}
+\item{cores}{number of cores when reading the dataset. default: 19.}
 
-\item{delim:}{delimiter, default (tab-delimited)}
+\item{delim}{delimiter, default (tab-delimited)}
 
-\item{header:}{default = T}
+\item{header}{default = T}
 }
 \value{
 

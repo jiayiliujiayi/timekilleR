@@ -2,10 +2,10 @@
 #' Fast read data frame
 #' The functions are developed to fit personal preference. Feel free to modify it.
 #'
-#' @param path_to_file: the path to the dataset
-#' @param delim: delimiter, default (tab-delimited)
-#' @param header: default TRUE
-#' @param cores: number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.
+#' @param path_to_file the path to the dataset
+#' @param delim delimiter, default (tab-delimited)
+#' @param header default TRUE
+#' @param cores number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.
 #'
 #' @return
 #' @export
@@ -53,10 +53,10 @@ fread.delim <-
 #' Title
 #'fast read a dataset into a matrix
 #'
-#' @param path_to_file: the path to the dataset
-#' @param delim: delimiter, default (tab-delimited)
-#' @param header: default TRUE
-#' @param cores: number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.
+#' @param path_to_file the path to the dataset
+#' @param delim delimiter, default (tab-delimited)
+#' @param header default TRUE
+#' @param cores number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.
 #'
 #' @return
 #' @export
