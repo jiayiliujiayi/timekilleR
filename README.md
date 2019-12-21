@@ -54,7 +54,7 @@ The format of the input file looks like so:
 |c|C|Cc|2|5|
 ||NA|Dd|4|4|6|
 
-`fread.matrix()`: fast imports a matrix format text file as a matrix into the .GlobalEnv.  And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
+`fread.matrix()`: fast imports a matrix format text file as a matrix into the .GlobalEnv.  By default, the values with the same rownames in each column will be sumed. And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
 The format of the input file looks like so:  
 
 |             | Cell1 | Cell2 |
@@ -63,7 +63,7 @@ The format of the input file looks like so:
 |b|1|1|
 |c|1|0|
 |c|2|5|
-|||4|4|6|
+| |4|6|
 
 -   fast inspect data
 
