@@ -9,9 +9,6 @@ ifCharCols(path_to_file)
 \arguments{
 \item{path_to_file}{the path to the dataset}
 }
-\value{
-
-}
 \description{
 Check if there are character columns in your dataset.
 }

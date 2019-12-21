@@ -5,7 +5,8 @@
 \title{Title
 fast read a dataset into a matrix}
 \usage{
-fread.matrix(path_to_file, delim = "auto", header = "auto", cores = 29)
+fread.matrix(path_to_file, delim = "auto", header = "auto",
+  cores = 29)
 }
 \arguments{
 \item{path_to_file}{the path to the dataset}
@@ -15,9 +16,6 @@ fread.matrix(path_to_file, delim = "auto", header = "auto", cores = 29)
 \item{header}{default TRUE}
 
 \item{cores}{number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.}
-}
-\value{
-
 }
 \description{
 Title

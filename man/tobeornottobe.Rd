@@ -10,9 +10,6 @@ tobeornottobe(input = "Should I study today?")
 \item{input}{ask a yes or no question or say some random words to the timekiller,
 e.g.: simply "Should I have lunch today?" or just "asdklfja2".}
 }
-\value{
-
-}
 \description{
 "To be, or not to be: that is the question. \cr
 Whether it’s nobler in the mind to suffer \cr
