@@ -17,6 +17,9 @@ fread.delim(path_to_file, delim = "\\t", header = T, cores = 29)
 
 \item{cores}{number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.}
 }
+\value{
+
+}
 \description{
 Fast read data
 Fast read data frame

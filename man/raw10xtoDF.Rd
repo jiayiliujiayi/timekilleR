@@ -4,8 +4,13 @@
 \alias{raw10xtoDF}
 \title{Title}
 \usage{
-raw10xtoDF(path_to_file, id = "Gene Symbol", cores = 19,
-  delim = "auto", header = T)
+raw10xtoDF(
+  path_to_file,
+  id = "Gene Symbol",
+  cores = 19,
+  delim = "auto",
+  header = T
+)
 }
 \arguments{
 \item{path_to_file}{the path to the dataset}
@@ -17,6 +22,9 @@ raw10xtoDF(path_to_file, id = "Gene Symbol", cores = 19,
 \item{delim}{delimiter, default (tab-delimited)}
 
 \item{header}{default = T}
+}
+\value{
+
 }
 \description{
 Title

@@ -9,6 +9,9 @@ getCharCols(path_to_file)
 \arguments{
 \item{path_to_file}{the path to the dataset}
 }
+\value{
+
+}
 \description{
 Extract the colnames of the "character" columns
 }
