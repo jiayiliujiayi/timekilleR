@@ -17,7 +17,8 @@ Installation and loading:
 -   Install the latest developmental version from within R:  
 ```r
 install.packages('devtools')
-devtools::install_github('jiayiliujiayi/timekiller')
+library('devtools')
+devtools::install_github('jiayiliujiayi/timekiller', dependencies = T)
 ```
 -   or install with the source code: in your terminal, execute the following lines:    
 ```bash
@@ -30,11 +31,13 @@ library(timekiller)
 ```
 Usage  
 ------------------------
+
 Time to kill time!  
 #### Check what's happening from all corners of the world:  
 `getPeoplesDaily()`:  scrape the latest news from the People’s Daily, China’s largest comprehensive media.  
 `getNature()`: wanna keep updated in the scientific world? Try this funcion to acquire the latest news from the Nature, a leading international weekly journal of science!  
 more functions are being developed:))  
+
 #### Find it difficult to make a decision? Ask the timekiller:  
 `tobeornottobe()`:  ask anything to timekiller, then you'll promptly get a Yes/No answer.  The default question is "Should I study today?"  Notice: The pious way of doing this is to ask one question once.  
 
