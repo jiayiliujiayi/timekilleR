@@ -33,16 +33,16 @@ Usage
 ------------------------
 
 Time to kill time!  
-#### Check what's happening from all corners of the world:  
+### Check what's happening from all corners of the world:  
 `getPeoplesDaily()`:  scrape the latest news from the People’s Daily, China’s largest comprehensive media.  
 `getNature()`: wanna keep updated in the scientific world? Try this funcion to acquire the latest news from the Nature, a leading international weekly journal of science!  
 more functions are being developed:))  
 
-#### Find it difficult to make a decision? Ask the timekiller:  
+### Find it difficult to make a decision? Ask the timekiller:  
 `tobeornottobe()`:  ask anything to timekiller, then you'll promptly get a Yes/No answer.  The default question is "Should I study today?"  Notice: The pious way of doing this is to ask one question once.  
 
-#### The most serious moment when calling timekiller: playing aroung with data! 
--   importing data in a fast way  
+## The most serious moment when calling timekiller: playing aroung with data! 
+### importing data in a fast way  
 `fread.delim()`: fast imports a data frame format text file as a 'data frame' element into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
 The format of the input file looks like so:  
 
@@ -61,13 +61,13 @@ The format of the input file looks like so:
 |**b**|1|2|
 |**c**|2|4|
 
--   fast inspect data
+### fast inspect data
 
 `ifCharCols()`: check if there's character columns in a dataset
 
 `getCharCols()`: output a list of colnames of the charactor columns  
 
--   fast tramsforming data
+### fast tramsforming data
 `raw10xtoDF()`: fast imports a raw 10X scRNA-Seq dataset, keeps the GeneSymbol column, aggregates the same symbols and sum the counts for each cell, then transform it into a dataframe.  
 The format of the input file looks like so: 
 
