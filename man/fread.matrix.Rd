@@ -5,10 +5,18 @@
 \title{Title
 fast read a dataset into a matrix}
 \usage{
-fread.matrix(path_to_file, delim = "auto", header = "auto", cores = 29)
+fread.matrix(
+  path_to_file,
+  method = sum,
+  delim = "auto",
+  header = "auto",
+  cores = 29
+)
 }
 \arguments{
 \item{path_to_file}{the path to the dataset}
+
+\item{method}{defalut = "sum"}
 
 \item{delim}{delimiter, default (tab-delimited)}
 
