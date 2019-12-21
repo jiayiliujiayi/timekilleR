@@ -42,6 +42,8 @@ ifCharCols <-
 #'
 #' @return
 #' @export
+#' @import magrittr
+#' @importFrom data.table fread
 #'
 #' @examples getCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 getCharCols <-
@@ -87,21 +89,30 @@ getCharCols <-
   }
 
 
-#' ifNaCols
+#' ifNACols
 #'
+#'Check if there are NA-containing columns in your dataset.
 #'
 #' @param path_to_file the path to the dataset, or the name of the element in the working environment
 #'
 #' @return
 #' @export
 #'
-#' @examples ifNaCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
-ifNaCols <-
+#' @import magrittr
+#' @importFrom data.table fread
+#'
+#'
+#' @examples ifNACols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
+ifNACols <-
   function(path_to_file){
     input = path_to_file
 
     # read file as a data frame
-    df.temp <- suppressWarnings(fread(input) %>% as.data.frame)
+    if(mode(input) == 'character'){
+      df.temp <- suppressWarnings(fread(input) %>% as.data.frame)
+    } else {
+      df.temp = input
+    }
 
     # column types
     Na.cols.sum <- sapply(df.temp, is.na) %>% colSums() %>% sum
