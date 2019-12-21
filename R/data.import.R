@@ -57,13 +57,16 @@ fread.delim <-
 #' @param delim delimiter, default (tab-delimited)
 #' @param header default TRUE
 #' @param cores number of cores when reading the dataset. default: 29.  Why 29? Because I love the prime numbers.
+#' @param method defalut = "sum"
 #'
 #' @return
 #' @export
+#' @import data.table
+#' @import magrittr
 #'
 #' @examples fread.matrix('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_matrix.txt')
 fread.matrix <-
-  function(path_to_file, delim = "auto", header = "auto", cores = 29){
+  function(path_to_file, method = sum, delim = "auto", header = "auto", cores = 29){
     # set path to the file as 'input' variable
     input = path_to_file
 
@@ -89,17 +92,26 @@ fread.matrix <-
 
     # import the data frame
     df.temp <-
-      fread(input,
-            stringsAsFactors = F, check.names = F,
-            sep = delim, header = header) %>%
-      as.data.frame
+      suppressWarnings(
+        fread(input,
+              stringsAsFactors = F, check.names = F,
+              sep = delim, header = header)
+        )
+
+    ## extract the id of rownames (the first element of the colnames)
+    df.temp.colname1 <- colnames(as.data.frame(df.temp))[1]
+
+    # aggregate and sum
+    df.temp <-
+      df.temp[, lapply(.SD, method), by = df.temp.colname1]
+
     ## extract the rownames using the first column the ouput matrix
     df.temp.colname1 <- colnames(df.temp)[1]
-    df.temp.rownames <- df.temp[, c(df.temp.colname1)]
+    df.temp.rownames <- as.data.frame(df.temp)[, c(df.temp.colname1)]
 
 
     # transform into matrix
-    df.temp <- df.temp %>%
+    df.temp <- df.temp %>% as.data.frame() %>%
       ### remove the 1st column
       .[, !colnames(.) %in% df.temp.colname1] %>%
       ### assign rownames
