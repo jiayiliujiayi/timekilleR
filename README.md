@@ -63,7 +63,7 @@ The format of the input file looks like so:
 |b|1|1|
 |c|1|0|
 |c|2|5|
-||4|4|6|
+|||4|4|6|
 
 -   fast inspect data
 
