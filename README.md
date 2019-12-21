@@ -8,6 +8,8 @@ The timekiller is an [R](https://www.r-project.org) package with several unimpor
 
 Also, writing this package itself is one of the ways to kill time.  
 
+This package is a form of "reinventing the wheel".  
+
 ---
 
 Installation and loading:  
@@ -78,6 +80,7 @@ getPoem(): eng and chn
 
 #### data manipulation functions in the preprocessing of the genomic data  
 readCountsMatrix: fast read counts matrix (avoid using read.table)  
+
 aggregateGeneSymbols: sum counts with the same gene.symbols for each cell (call data.table .SD)  
 CountsToMatrix: call magrittr pipe; amend colnames(.)[1] before tranformation  
 MatrixToCounts: call pipe
