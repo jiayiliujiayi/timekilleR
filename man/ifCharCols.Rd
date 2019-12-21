@@ -7,7 +7,7 @@
 ifCharCols(path_to_file)
 }
 \arguments{
-\item{path_to_file}{the path to the dataset}
+\item{path_to_file}{the path to the dataset, or the name of the element in the working environment}
 }
 \value{
 
