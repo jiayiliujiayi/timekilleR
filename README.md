@@ -46,20 +46,24 @@ more functions are being developed:))
 `fread.delim()`: fast imports a data frame format text file as a 'data frame' element into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
 The format of the input file looks like so:  
 
-| Gene.Symbol | Cell1 | Cell2 |
-|-------------|-------|-------|
-|a|1|2|
-|b|1|2|
-|c|2|4|
+| Gene.Symbol | Gene.ID_1 | Gene.ID_2 | Cell1 | Cell2 |
+|-------------|-----------|-----------|-------|-------|
+|a|A|Aa|1|0|
+|b|B|Bb|1|1|
+|c|C|Cc|1|0|
+|c|C|Cc|2|5|
+||NA|Dd|4|4|6|
 
-`fread.matrix()`: fast imports a matrix format text file as a matrix into the .GlobalEnv.  And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
+`fread.matrix()`: fast imports a matrix format text file as a matrix into the .GlobalEnv.  By default, the values with the same rownames in each column will be sumed. And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
 The format of the input file looks like so:  
 
 |             | Cell1 | Cell2 |
 |-------------|-------|-------|
-|**a**|1|2|
-|**b**|1|2|
-|**c**|2|4|
+|a|1|0|
+|b|1|1|
+|c|1|0|
+|c|2|5|
+| |4|6|
 
 ### fast inspect data
 
