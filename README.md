@@ -50,6 +50,14 @@ Time to kill time!
 **more functions are being developed:))**  
 
 ### The most serious moment when calling timekiller--Playing Around with DATASETS! 
+
+- fast dataset inspection (the input could be either external files or internal elements)
+
+  `ifCharCols()`: check if there's character type columns in a dataset  
+  `getCharCols()`: output the colnames of the charactor type columns  
+  `ifNACols()`: check if there's NA-containing columns in a dataset  
+  `getNACols()`: output the colnames of the NA-containing columns  
+  
 - importing data in a faster way (credits to the package [data.table](https://github.com/Rdatatable/data.table)!)  
 
   `fread.delim()`: fast imports a data frame format text file as a 'data frame' element into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
@@ -65,6 +73,7 @@ Time to kill time!
   |             | NA        | Dd        | 4     | 6     |
 
   `fread.matrix()`: fast imports a matrix format text file as a matrix into the .GlobalEnv.  By default, the values with the same rownames in each column will be sumed. And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
+  
   The format of the input file looks like so:  
 
   |      | Cell1 | Cell2 |
@@ -74,20 +83,10 @@ Time to kill time!
   | c    | 1     | 0     |
   | c    | 2     | 5     |
   |      | 4     | 6     |
-
-- fast inspect data
-
-  `ifCharCols()`: check if there's character type columns in a dataset  
-
-  `getCharCols()`: output the colnames of the charactor type columns  
-
-  `ifNACols()`: check if there's NA-containing columns in a dataset  
-
-  `getNACols()`: output the colnames of the NA-containing columns  
-
-
-- fast tramsforming data
+    
+- fast tramsforming data  
   `raw10xtoDF()`: fast imports a raw 10X scRNA-Seq dataset, keeps the id column as you request in the argument "id", aggregates the same ids and sum (default, could be changed to "mean" or "median" per your request) the counts for each cell, then transform it into a dataframe.  
+  
   The format of the input file looks like so: 
 
   | Gene.Symbol | Gene.ID_1 | Gene.ID_2 | Cell1 | Cell2 |
@@ -106,6 +105,15 @@ Time to kill time!
   | b           | 1     | 1     |
   | c           | 3     | 5     |
   | novel       | 4     | 6     |
+  
+  If the id = "Gene.ID_2', then the output 'data.frame' element looks like so: 
+
+  | Gene.ID_2 | Cell1 | Cell2 |
+  | --------- | ----- | ----- |
+  | Aa        | 1     | 0     |
+  | Bb        | 1     | 1     |
+  | Cc        | 3     | 5     |
+  | Dd        | 4     | 6     |
 
 
 
