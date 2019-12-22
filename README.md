@@ -83,9 +83,8 @@ Time to kill time!
 
   `ifNACols()`: check if there's NA-containing columns in a dataset  
 
-  `getNACols()`: output the colnames of he NA-containing columns  
+  `getNACols()`: output the colnames of the NA-containing columns  
 
-i
 
 - fast tramsforming data
   `raw10xtoDF()`: fast imports a raw 10X scRNA-Seq dataset, keeps the id column as you request in the argument "id", aggregates the same ids and sum (default, could be changed to "mean" or "median" per your request) the counts for each cell, then transform it into a dataframe.  
