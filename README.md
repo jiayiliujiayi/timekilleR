@@ -23,7 +23,7 @@ devtools::install_github('jiayiliujiayi/timekiller', dependencies = T)
 -   or install with the source code: in your terminal, execute the following lines:    
 ```bash
 git clone https://github.com/jiayiliujiayi/timekiller.git 
-cd .. && R CMD INSTALL timekiller
+R CMD INSTALL timekiller
 ```
 -   Loading the package:  
 ```r
