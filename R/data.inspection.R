@@ -82,9 +82,7 @@ getCharCols <-
     if(temp.ifCharCols(input) == FALSE){
       print("There's no character columns in this dataset")
     } else {
-      print(
         colnames(df.temp)[which(col.types == "character")]
-      )
     }
   }
 
@@ -121,6 +119,43 @@ ifNACols <-
     if(Na.cols.sum != 0){
       print("Yes, there are some NA columns in this dataset.")
       print("Furthermore, you can call getCharCols() to get the colnames of NA columns")
+    } else {
+      print("No, there is no NA columns in this dataset")
+    }
+  }
+
+
+#' getNACols
+#' Extract the colnames of the NA-containing columns in your dataset.
+#'
+#' @param path_to_file the path to the dataset, or the name of the element in the working environment
+#'
+#' @return
+#' @export
+#' @importFrom data.table fread
+#' @import magrittr
+#'
+#' @examples getNACols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
+getNACols <-
+  function(path_to_file){
+    input = path_to_file
+
+    # read file as a data frame
+    if(mode(input) == 'character'){
+      df.temp <- suppressWarnings(fread(input) %>% as.data.frame)
+    } else {
+      df.temp = input
+    }
+
+    # column types
+    Na.cols.sum <- sapply(df.temp, is.na) %>% colSums() %>% sum
+
+    # which columns contains NA
+    Na.ncol <- which(Na.cols.sum != 0)
+
+    # check if there are "character"s in the column types
+    if(Na.cols.sum != 0){
+      colnames(df.temp)[Na.ncol]
     } else {
       print("No, there is no NA columns in this dataset")
     }
