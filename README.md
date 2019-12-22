@@ -49,7 +49,7 @@ Time to kill time!
 
 **more functions are being developed:))**  
 
-#### The most serious moment when calling timekiller: playing aroung with data! 
+### The most serious moment when calling timekiller: playing aroung with data! 
 - importing data in a fast way  
 
   `fread.delim()`: fast imports a data frame format text file as a 'data frame' element into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
