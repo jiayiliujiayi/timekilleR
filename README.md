@@ -29,6 +29,8 @@ cd .. && R CMD INSTALL timekiller
 ```r
 library(timekiller)
 ```
+  
+
 Usage  
 ------------------------
 
@@ -36,59 +38,75 @@ Time to kill time!
 #### Check what's happening from all corners of the world:  
 `getPeoplesDaily()`:  scrape the latest news from the People’s Daily, China’s largest comprehensive media.  
 `getNature()`: wanna keep updated in the scientific world? Try this funcion to acquire the latest news from the Nature, a leading international weekly journal of science!  
-more functions are being developed:))  
+**more functions are being developed:))**  
 
 #### Find it difficult to make a decision? Ask the timekiller:  
 `tobeornottobe()`:  ask anything to timekiller, then you'll promptly get a Yes/No answer.  The default question is "Should I study today?"  Notice: The pious way of doing this is to ask one question once.  
 
+#### Wanna have some fun?  
+
+`play24points()`: the timekiller will randomly pick 4 pocker cards for you.  You can define the max and min value of the cards to be picked.  
+
+**more functions are being developed:))**  
+
 #### The most serious moment when calling timekiller: playing aroung with data! 
--   importing data in a fast way  
-`fread.delim()`: fast imports a data frame format text file as a 'data frame' element into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
-The format of the input file looks like so:  
+- importing data in a fast way  
 
-| Gene.Symbol | Gene.ID_1 | Gene.ID_2 | Cell1 | Cell2 |
-|-------------|-----------|-----------|-------|-------|
-|a|A|Aa|1|0|
-|b|B|Bb|1|1|
-|c|C|Cc|1|0|
-|c|C|Cc|2|5|
-||NA|Dd|4|4|6|
+  `fread.delim()`: fast imports a data frame format text file as a 'data frame' element into the .GLobalEnv.  Yes, it is a wrapper of the data.table::fread but we the oldschool might prefer working on a 'data frame' class element.  
 
-`fread.matrix()`: fast imports a matrix format text file as a matrix into the .GlobalEnv.  By default, the values with the same rownames in each column will be sumed. And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
-The format of the input file looks like so:  
+  The format of the input file looks like so:  
 
-|             | Cell1 | Cell2 |
-|-------------|-------|-------|
-|a|1|0|
-|b|1|1|
-|c|1|0|
-|c|2|5|
-| |4|6|
+  | Gene.Symbol | Gene.ID_1 | Gene.ID_2 | Cell1 | Cell2 |
+  | ----------- | --------- | --------- | ----- | ----- |
+  | a           | A         | Aa        | 1     | 0     |
+  | b           | B         | Bb        | 1     | 1     |
+  | c           | C         | Cc        | 1     | 0     |
+  | c           | C         | Cc        | 2     | 5     |
+  |             | NA        | Dd        | 4     | 6     |
 
--   fast inspect data
+  `fread.matrix()`: fast imports a matrix format text file as a matrix into the .GlobalEnv.  By default, the values with the same rownames in each column will be sumed. And yes, it is still a wrapper of the data.table::fread, with the maggrittr:%>%.  
+  The format of the input file looks like so:  
 
-`ifCharCols()`: check if there's character columns in a dataset
+  |      | Cell1 | Cell2 |
+  | ---- | ----- | ----- |
+  | a    | 1     | 0     |
+  | b    | 1     | 1     |
+  | c    | 1     | 0     |
+  | c    | 2     | 5     |
+  |      | 4     | 6     |
 
-`getCharCols()`: output a list of colnames of the charactor columns  
+- fast inspect data
 
--   fast tramsforming data
-`raw10xtoDF()`: fast imports a raw 10X scRNA-Seq dataset, keeps the GeneSymbol column, aggregates the same symbols and sum the counts for each cell, then transform it into a dataframe.  
-The format of the input file looks like so: 
+  `ifCharCols()`: check if there's character type columns in a dataset  
 
-| Gene.Symbol | Gene_ID.1 | Gene_ID.2 | Cell1 | Cell2 |
-|-------------|-------|-------|---|---|
-|a|A|Aa|1|2|
-|b|B|Bb|1|2|
-|c|C|Cc|1|2|
-|c|C|Cc|1|2|
+  `getCharCols()`: output the colnames of the charactor type columns  
 
-The format of the output 'data.frame' element looks like so: 
+  `ifNACols()`: check if there's NA-containing columns in a dataset  
 
-| Gene.Symbol | Cell1 | Cell2 |
-|-------------|-------|-------|
-|a|1|2|
-|b|1|2|
-|c|2|4|
+  `getNACols()`: output the colnames of he NA-containing columns  
+
+i
+
+- fast tramsforming data
+  `raw10xtoDF()`: fast imports a raw 10X scRNA-Seq dataset, keeps the id column as you request in the argument "id", aggregates the same ids and sum (default, could be changed to "mean" or "median" per your request) the counts for each cell, then transform it into a dataframe.  
+  The format of the input file looks like so: 
+
+  | Gene.Symbol | Gene.ID_1 | Gene.ID_2 | Cell1 | Cell2 |
+  | ----------- | --------- | --------- | ----- | ----- |
+  | a           | A         | Aa        | 1     | 0     |
+  | b           | B         | Bb        | 1     | 1     |
+  | c           | C         | Cc        | 1     | 0     |
+  | c           | C         | Cc        | 2     | 5     |
+  |             | NA        | Dd        | 4     | 6     |
+
+  If the id = "Gene.Symbol', then the output 'data.frame' element looks like so: 
+
+  | Gene.Symbol | Cell1 | Cell2 |
+  | ----------- | ----- | ----- |
+  | a           | 1     | 0     |
+  | b           | 1     | 1     |
+  | c           | 3     | 5     |
+  | novel       | 4     | 6     |
 
 
 

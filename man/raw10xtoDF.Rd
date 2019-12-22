@@ -6,6 +6,7 @@
 \usage{
 raw10xtoDF(
   path_to_file,
+  method = sum,
   id = "Gene Symbol",
   cores = 19,
   delim = "auto",
@@ -14,6 +15,8 @@ raw10xtoDF(
 }
 \arguments{
 \item{path_to_file}{the path to the dataset}
+
+\item{method}{manipulate the values of one cell with the same gene symbols/ids. defalut = "sum"}
 
 \item{id}{the grouping id in the dataset, default = "Gene Symbol".}
 
@@ -30,7 +33,7 @@ raw10xtoDF(
 Title
 }
 \examples{
-raw10xtoDF
+raw10xtoDF('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt', id = "Gene.Symbol")
 
 }
 \keyword{data}
