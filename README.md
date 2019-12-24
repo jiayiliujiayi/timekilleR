@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller)
 
 Author: [Jiayi Liu :pig:](https://jiayiliu.me)  
-Find me here@[github](https://github.com/jiayiliujiayi) or @[webpage](https://jiayiliu.me)
+Find me here@[github](https://github.com/jiayiliujiayi) or @[my webpage](https://jiayiliu.me)
 
 ---
 The timekiller is an [R](https://www.r-project.org) package with several unimportant, superstitious and personal R functions that help with killing time. 
@@ -47,7 +47,7 @@ Time to kill time!
 #### Wanna have some fun?  
 
 `play24points()`: the timekiller will randomly pick 4 pocker cards for you.  You can define the max and min value of the cards to be picked.  
-
+`myLuckyNumber()`: get your lucky number for today!  You could manipulate it by setting a range to the values using "max" and "min".  
 **more functions are being developed:))**  
 
 ### The most serious moment when calling timekiller--Playing Around with DATASETS! 
@@ -127,13 +127,13 @@ getScience/Cell? wrap these three or more into getSci?
 whoAmItoday: randomly generate a noun  
 getWeather: arguments including "today"(default), "yesterday", "tomorrow" and "week" (which represents this week)  
 getAirQualityIndex/getAQI  
-play24points: generate four integers within the range of [1,10].  
-myLuckyNumber: generate today's lucky number, seed(Sys.Date %% 1e10)  
+~~play24points: generate four integers within the range of [1,10].~~  
+~~myLuckyNumber: generate today's lucky number, seed(Sys.Date %% 1e10)~~  
 getPoem(): eng and chn
 
 #### data manipulation functions in the preprocessing of the genomic data  
-readCountsMatrix: fast read counts matrix (avoid using read.table)  
-
-aggregateGeneSymbols: sum counts with the same gene.symbols for each cell (call data.table .SD)  
+~~readCountsMatrix: fast read counts matrix (avoid using read.table)~~  
+raw10xtoMatrix
+~~aggregateGeneSymbols: sum counts with the same gene.symbols for each cell (call data.table .SD)~~  
 CountsToMatrix: call magrittr pipe; amend colnames(.)[1] before tranformation  
 MatrixToCounts: call pipe
