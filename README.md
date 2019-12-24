@@ -1,7 +1,8 @@
 # timekiller
 [![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller)
 
-[Jiayi Liu :pig:](https://jiayiliu.me)
+Author: Jiayi Liu :pig:  
+Find me here@[github](https://github.com/jiayiliujiayi) or @[MyWebpage](https://jiayiliu.me)
 
 ---
 The timekiller is an [R](https://www.r-project.org) package with several unimportant, superstitious and personal R functions that help with killing time. 
