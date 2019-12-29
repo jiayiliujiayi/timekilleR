@@ -1,6 +1,7 @@
 # timekiller
-Lin/Mac:[![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller)  
-Win:[![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller)
+Lin/Mac: [![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller)  
+Win: [![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master)
+
 
 
 Author: [Jiayi Liu :pig:](https://jiayiliu.me)  
