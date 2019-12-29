@@ -15,5 +15,5 @@ myLuckyNumber(min = 1, max = 100)
 
 }
 \description{
-Ask the timekiller what's your lucknumber for today.  Remeber not to ask it twice.
+Ask the timekiller what's your lucknumber for today.  Remeber not to ask it two times in the same day.
 }
