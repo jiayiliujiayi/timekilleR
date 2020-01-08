@@ -42,6 +42,7 @@ Time to kill time!
 #### Check what's happening from all corners of the world:  
 `getPeoplesDaily()`:  scrape the latest news from the People’s Daily, China’s largest comprehensive media.  
 `getNature()`: wanna keep updated in the scientific world? Try this funcion to acquire the latest news from the Nature, a leading international weekly journal of science!  
+`getScience()`: another way of keeping updated in the scientific world: to obtain the latest news from the Science magazine!   
 **more functions are being developed:))**  
 
 #### Find it difficult to make a decision? Ask the timekiller:  
@@ -133,6 +134,7 @@ getAirQualityIndex/getAQI
 ~~play24points: generate four integers within the range of [1,10].~~  
 ~~myLuckyNumber: generate today's lucky number, seed(Sys.Date %% 1e10)~~  
 getPoem(): eng and chn
+
 
 #### data manipulation functions in the preprocessing of the genomic data  
 ~~readCountsMatrix: fast read counts matrix (avoid using read.table)~~  

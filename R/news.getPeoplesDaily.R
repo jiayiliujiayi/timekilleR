@@ -11,6 +11,7 @@
 #'
 #' @examples getPeoplesDaily()
 #' @importFrom xml2 read_html
+
 getPeoplesDaily <-
   function(category = "headline"){
     # define the main website of the People's Daily as the url variable
