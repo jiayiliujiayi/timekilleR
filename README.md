@@ -1,7 +1,10 @@
 # timekiller
-Lin/Mac: [![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller)  
-Win: [![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master)
-
+[![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller) (Lin/Mac)  
+[![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master) (Win)  
+[![HitCount](http://hits.dwyl.io/jiayiliujiayi/timekiller.svg)](http://hits.dwyl.io/jiayiliujiayi/timekiller)  
+[![GitHub last commit](https://img.shields.io/github/last-commit/jiayiliujiayi/timekiller)](https://github.com/jiayiliujiayi/timekiller/commits/master)   
+[![Documentation Status](https://readthedocs.org/projects/timekiller/badge/?version=latest)](https://timekiller.readthedocs.io/en/latest/?badge=latest)  
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/jiayiliujiayi)
 
 
 Author: [Jiayi Liu :pig:](https://jiayiliu.me)  
