@@ -3,7 +3,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master)
 
 
-
 Author: [Jiayi Liu :pig:](https://jiayiliu.me)  
 Find me here@[github](https://github.com/jiayiliujiayi) or @[my webpage](https://jiayiliu.me)
 
