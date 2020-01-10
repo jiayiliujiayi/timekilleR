@@ -1,4 +1,6 @@
-# timekiller    <img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg" width = "241" height="23"/>
+# timekiller <img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg" width = "241" height="23"/>
+<!-----------⬆️The .svg ref is not is not a markdown line, it's an html line instead. -->
+
 
 [![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller) 
 [![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master) 
