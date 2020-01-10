@@ -8,3 +8,10 @@ notifications:
   email:
     on_success: change
     on_failure: always
+    
+r_packages:
+  - covr
+
+after_success:
+  - Rscript -e 'library(covr); codecov()'
+CODECOV_TOKEN="85e759be-46b5-420f-85aa-e2e1bf7f7c28"
