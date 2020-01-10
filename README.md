@@ -1,4 +1,5 @@
-# timekiller    [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+# timekiller    <img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg" width = "241" height="23"/>
+
 [![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller) 
 [![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master) 
 [![Documentation Status](https://readthedocs.org/projects/timekiller/badge/?version=latest)](https://timekiller.readthedocs.io/en/latest/?badge=latest) 
