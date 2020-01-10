@@ -8,7 +8,7 @@
 
 
 [Jiayi Liu](https://jiayiliu.me)
-<img src="https://raw.githubusercontent.com/jiayiliujiayi/jiayitest/master/piglet.png" width="19" height="19" />
+<img src="https://raw.githubusercontent.com/jiayiliujiayi/jiayitest/master/piglet.png" width="20" height="19" />
 
 
 
