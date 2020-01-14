@@ -156,7 +156,7 @@ getNACols <-
     Na.ncol <- which(Na.cols.sum != 0)
 
     # check if there are "character"s in the column types
-    if(Na.cols.sum != 0){
+    if(sum(Na.cols.sum) != 0){
       colnames(df.temp)[Na.ncol]
     } else {
       print("No, there is no NA columns in this dataset")
