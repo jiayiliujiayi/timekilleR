@@ -1,25 +1,22 @@
-# timekiller <img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg" width = "241" height="23"/>
+# timekiller <!--- <img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg" width = "241" height="23"/> -->
 <!-----------⬆️The .svg ref is not is not a markdown line, it's an html line instead. -->
 
+
 <!-- badges: start -->
-  [![Codecov test coverage](https://codecov.io/gh/jiayiliujiayi/timekiller/branch/master/graph/badge.svg)](https://codecov.io/gh/jiayiliujiayi/timekiller?branch=master)
-  <!-- badges: end -->
-
-
 [![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller) 
 [![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master) 
 [![Documentation Status](https://readthedocs.org/projects/timekiller/badge/?version=latest)](https://timekiller.readthedocs.io/en/latest/?badge=latest) 
-[![Liscence](https://img.shields.io/badge/Liscence-GNU%203.0-9cf)](https://github.com/jiayiliujiayi/timekiller/blob/master/LICENSE)
+[![Liscence](https://img.shields.io/badge/Liscence-GNU%203.0-9cf)](https://github.com/jiayiliujiayi/timekiller/blob/master/LICENSE) 
+[![codecov](https://codecov.io/gh/jiayiliujiayi/timekiller/branch/master/graph/badge.svg)](https://codecov.io/gh/jiayiliujiayi/timekiller)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:jiayiliujiayiliu@gmail.com)  
+<!-- badges: end -->
   
-
-
 [Jiayi Liu](https://jiayiliu.me)
-<img src="https://raw.githubusercontent.com/jiayiliujiayi/jiayitest/master/piglet.png" width="20" height="19" />
-
-
+<a href="https://jiayiliu.me/"><img src="man/figures/piglet.png" width="20" height="19" />
 
 ---
+<a href="https://jiayiliu.me/"><img src="man/figures/gochi-nose.png" height="130" align="right" /></a>
+
 The timekiller is an [R](https://www.r-project.org) package with several unimportant, superstitious and personal R functions that help with killing time. 
 
 Also, writing this package itself is one of the ways to kill time.  
