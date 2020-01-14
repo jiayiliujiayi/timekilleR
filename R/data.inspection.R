@@ -101,7 +101,6 @@ getCharCols <-
 #'
 #'
 #' @examples ifNACols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
-
 ifNACols <-
   function(path_to_file){
     input = path_to_file
@@ -137,7 +136,6 @@ ifNACols <-
 #' @import magrittr
 #'
 #' @examples getNACols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
-
 getNACols <-
   function(path_to_file){
     input = path_to_file
