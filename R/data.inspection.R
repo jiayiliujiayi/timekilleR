@@ -47,8 +47,7 @@ ifCharCols <-
 #'
 #' @examples getCharCols('https://raw.githubusercontent.com/jiayiliujiayi/timekiller/master/testdata/dataset_df.txt')
 getCharCols <-
-  function(path_to_file){
-    input = path_to_file
+  function(path_to_file){input = path_to_file
 
     #----------- define temp.ifCharCols to get a boolean output -----------------#
     temp.ifCharCols <-
@@ -118,7 +117,7 @@ ifNACols <-
     # check if there are "character"s in the column types
     if(Na.cols.sum != 0){
       print("Yes, there are some NA columns in this dataset.")
-      print("Furthermore, you can call getCharCols() to get the colnames of NA columns")
+      print("Furthermore, you can call getNACols() to get the colnames of NA columns")
     } else {
       print("No, there is no NA columns in this dataset")
     }
