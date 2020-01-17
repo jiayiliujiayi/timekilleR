@@ -17,3 +17,6 @@ myLuckyNumber(min = 1, max = 100)
 \description{
 Ask the timekiller what's your lucknumber for today.  Remeber not to ask it two times in the same day.
 }
+\examples{
+myLuckyNumber(min = 5, max = 10)
+}
