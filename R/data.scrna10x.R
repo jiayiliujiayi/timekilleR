@@ -59,7 +59,7 @@ raw10xtoDF <-
     df.temp[which(is.na(df.temp[, id]) == T), id] = "novel"
 
     # output df
-    df.temp
+    return(df.temp)
   }
 
 
