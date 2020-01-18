@@ -11,7 +11,7 @@
 #' @importFrom stats runif
 #' @import magrittr
 #'
-#' @examplesj myLuckyNumber(min = 5, max = 10)
+#' @examples myLuckyNumber(min = 5, max = 10)
 myLuckyNumber <-
   function(min = 1, max = 100){
     set.seed(Sys.time() %>% as.POSIXct(units="secs") %>% as.numeric() %% 1e9)
