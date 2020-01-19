@@ -1,3 +1,3 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+test_that("To be or not to be? ", {
+  expect_equal(class(tobeornottobe()), "character")
 })
