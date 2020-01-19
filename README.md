@@ -15,7 +15,7 @@
 <a href="https://jiayiliu.me/"><img src="man/figures/piglet.png" width="20" height="19" />
 
 ---
-<a href="https://jiayiliu.me/"><img src="man/figures/gochi-nose.png" height="130" align="right" /></a>
+<a href="https://jiayiliu.me/"><img src="man/figures/cute-nose.png" height="130" align="right" /></a>
 
 The timekiller is an [R](https://www.r-project.org) package with several unimportant, superstitious and personal R functions that help with killing time. 
 
