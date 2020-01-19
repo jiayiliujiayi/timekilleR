@@ -2,6 +2,7 @@
 
 export(fread.delim)
 export(fread.matrix)
+export(fread.matrix2)
 export(getCharCols)
 export(getNACols)
 export(getNature)
