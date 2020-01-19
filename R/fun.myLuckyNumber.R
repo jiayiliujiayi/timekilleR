@@ -15,5 +15,5 @@
 myLuckyNumber <-
   function(min = 1, max = 100){
     set.seed(Sys.time() %>% as.POSIXct(units="secs") %>% as.numeric() %% 1e9)
-    runif(min = min, max = max, n = 1) %>% round
+    return(runif(min = min, max = max, n = 1) %>% round)
   }
