@@ -3,7 +3,7 @@
 
 
 <!-- badges: start -->
-[![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller) 
+<!---[![Build Status](https://travis-ci.org/jiayiliujiayi/timekiller.svg?branch=master)](https://travis-ci.org/jiayiliujiayi/timekiller)  -->
 [![Build status](https://ci.appveyor.com/api/projects/status/wgakau56an1ry06h/branch/master?svg=true)](https://ci.appveyor.com/project/jiayiliujiayi/timekiller/branch/master) 
 [![Documentation Status](https://readthedocs.org/projects/timekiller/badge/?version=latest)](https://timekiller.readthedocs.io/en/latest/?badge=latest) 
 [![Liscence](https://img.shields.io/badge/Liscence-GNU%203.0-9cf)](https://github.com/jiayiliujiayi/timekiller/blob/master/LICENSE) 
